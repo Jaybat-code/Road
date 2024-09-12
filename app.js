@@ -1,6 +1,7 @@
 const car = document.getElementById("car");
 const stopsign = document.getElementById("stopsign")
 const stopGo = document.getElementById("image");
+const stupidSong = document.getElementById("stupidSong");
 let stopSignThere = true
 let speed = 20;
 let carMoving = false;
@@ -19,6 +20,7 @@ function stopSignLogic(){
             speed = 20;
             if(!carMoving){
                 carMoving=true;
+                stupidSong.play();
                 moveCar();
             }
             moveCar();
@@ -44,6 +46,7 @@ function moveCar() {
         car.style.left = "-200px";
         laps++;
         console.log(laps);
+        stupidSong.playbackRate +=.1;
     }
     lookForStop();
 
