@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(30deg,lightgreen,darkgreen)
+}
+.Road{
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:500px;
+    width:100%;
+    margin-top: 350px;
+}
+.roadsegment{
+    background-color: yellow;
+    height:25px;
+    width:100px;
+}
+.car{
+    background-color: tan;
+    position: absolute;
+    width:200px;
+    height:100px;
+    left:0px;
+    
+}
+#car{
+    transition: left 0s ease-in-out;
+}
+.wheel{
+    width:30px;
+    height:30px;
+    background-color: black;
+    position:relative;
+}
+#fronttop{
+    left:80%;
+    top:-5px;
+}
+#frontbottom{
+    left:80%;
+    top:50%;
+}
+#backtop{
+    left:10px;
+    top:-65px;
+}
+#backbottom{
+    left:10px;
+    top:-10px;
+}
+.stopsign{
+    position:absolute;
+    left:1800px;
+}
